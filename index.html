@@ -131,11 +131,15 @@
             to { transform: translateX(100%); }
         }
 
-        .socials-row {
+        .socials-row img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+            transition: transform var(--transition-speed) ease;
             margin-top: 30px;
             padding: 20px;
             background-color: rgba(30, 30, 30, 0.8);
@@ -146,6 +150,7 @@
         }
 
         .socials-row a {
+            margin: 0 10px;
             position: relative;
             transition: all var(--transition-speed) ease;
         }
